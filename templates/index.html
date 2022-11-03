@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CrackMe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static '/css/cover.css' %}" rel="stylesheet">
+  </head>
+
+  <body class="text-center d-flex flex-column" style="justify-content: flex-start;">
+
+    <div class="navbar navbar-inverse p-5">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"><strong>Hackerman</strong></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/"><strong><u>SQL injection</u></strong></a></li>
+          <li><a href="/csrf_yes_no"><strong>CSRF</strong></a></li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="d-flex" style="margin: 0px !important;">
+
+        <main role="main" class="inner cover">
+            <form action="/" method="post">
+                {% csrf_token %}
+                <h1 class="cover-heading">SQL injection</h1>
+                <p class="lead">Try to inject me with some SQL!</p>
+                <p class="lead">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="enable" value="yes" checked>
+                        <label class="form-check-label">Enable injection</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="enable" value="no">
+                        <label class="form-check-label">Disable injection</label>
+                    </div>
+                </p>
+                <p class="lead form-group">
+                    <label class="form-label">Enter Premier League team nickname to get full name:</label>
+                    <textarea class="form-control" name="sql" style="min-height: 200px;"></textarea>
+                </p>
+                <p class="lead">
+                <button type="submit" class="btn btn-lg btn-secondary">Send</button>
+                </p>
+            </form>
+          </main>
+
+          <hr style="border-left: 3px solid white; height: 100%;">
+
+          <main role="main" class="inner cover" style="min-width: 500px;">
+            <h1 class="cover-heading">Output</h1>
+            <table class="table">
+              <tr>
+                {% for col in columns %}
+                  <th>{{col}}</th>
+                {% endfor %}
+              </tr>
+                {% for row in rows %}
+                <tr>
+                  {% for value in row.values %}
+                      <td>{{value}}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+
+            <p class="lead">
+              <table class="table">
+                <tr>
+                  {% if name %}
+                  <th>name</th>
+                  {% endif %}
+                </tr>
+                 {% for row in name %}
+              <tr>
+                <td>{{row.name}}</td>
+              </tr>
+              {% endfor %}
+              </table>
+            </p>
+
+            <p class="lead">
+                  {{error}}
+            </p>
+          </main>
+
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+        </div>
+      </footer>
+    </div>
+
+</body>
+</html>
+
+<script src="{% static '/js/jquery-3.2.1.slim.min.js' %}"></script>
+<script src="{% static '/js/popper.min.js' %}"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>

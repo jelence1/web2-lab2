@@ -1,0 +1,258 @@
+[
+    {
+      "model": "lab2_App.users",
+      "pk": 1,
+      "fields": {
+        "user_name": "admin",
+        "first_name": "Adminko",
+        "last_name": "Adminić",
+        "email": "admo@admin.com",
+        "password": "mojnovisnazniadminpassword",
+        "role": "admin"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 2,
+      "fields": {
+        "user_name": "snjeska",
+        "first_name": "Snješka",
+        "last_name": "Mrzlić",
+        "email": "mrma@zima.hr",
+        "password": "ledledeni123",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 3,
+      "fields": {
+        "user_name": "seka",
+        "first_name": "Seka",
+        "last_name": "Aleksić",
+        "email": "seka@aleksic.rs",
+        "password": "pevaljka007",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 4,
+      "fields": {
+        "user_name": "gabica",
+        "first_name": "Gabi",
+        "last_name": "Novak",
+        "email": "grabijela@gmail.com",
+        "password": "PamtimSamoSretneDane",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 5,
+      "fields": {
+        "user_name": "koka",
+        "first_name": "Emilija",
+        "last_name": "Kokić",
+        "email": "emica.koks@email.com",
+        "password": "RockMeBaby",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 6,
+      "fields": {
+        "user_name": "cetina",
+        "first_name": "Meri",
+        "last_name": "Cetinić",
+        "email": "moremore@mail.hr",
+        "password": "PotraziMeUPredgradu",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 7,
+      "fields": {
+        "user_name": "zicaros",
+        "first_name": "Molim",
+        "last_name": "Bodove",
+        "email": "molim@bodove.hr",
+        "password": "dajbodpls123",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.users",
+      "pk": 8,
+      "fields": {
+        "user_name": "dedo",
+        "first_name": "Arsen",
+        "last_name": "Dedić",
+        "email": "jasamdedo@hotmail.com",
+        "password": "OnoSveStoZnasOMeni",
+        "role": "user"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 1,
+      "fields": {
+        "name": "Man City",
+        "nickname": "MCI"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 2,
+      "fields": {
+        "name": "Arsenal",
+        "nickname": "ARS"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 3,
+      "fields": {
+        "name": "Tottenham",
+        "nickname": "TOT"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 4,
+      "fields": {
+        "name": "Newcastle",
+        "nickname": "NEW"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 5,
+      "fields": {
+        "name": "Chelsea",
+        "nickname": "CHE"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 6,
+      "fields": {
+        "name": "Man Utd",
+        "nickname": "MUN"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 7,
+      "fields": {
+        "name": "Fulham",
+        "nickname": "FUL"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 8,
+      "fields": {
+        "name": "Brighton",
+        "nickname": "BRH"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 9,
+      "fields": {
+        "name": "Liverpool",
+        "nickname": "LIV"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 10,
+      "fields": {
+        "name": "Crystal Palace",
+        "nickname": "CRY"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 11,
+      "fields": {
+        "name": "Brentford",
+        "nickname": "BRE"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 12,
+      "fields": {
+        "name": "West Ham",
+        "nickname": "WHU"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 13,
+      "fields": {
+        "name": "Everton",
+        "nickname": "EVE"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 14,
+      "fields": {
+        "name": "Bournemouth",
+        "nickname": "BOU"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 15,
+      "fields": {
+        "name": "Aston Villa",
+        "nickname": "AVL"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 16,
+      "fields": {
+        "name": "Southampton",
+        "nickname": "SOU"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 17,
+      "fields": {
+        "name": "Leicester",
+        "nickname": "LEI"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 18,
+      "fields": {
+        "name": "Wolverhampton",
+        "nickname": "WLV"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 19,
+      "fields": {
+        "name": "Leeds United",
+        "nickname": "LEE"
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 20,
+      "fields": {
+        "name": "Nottingham Forest",
+        "nickname": "NTF"
+      }
+    }
+  ]

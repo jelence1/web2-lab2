@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CrackMe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static '/css/cover.css' %}" rel="stylesheet">
+  </head>
+
+  <body class="text-center d-flex flex-column" style="justify-content: flex-start;">
+
+    <div class="navbar navbar-inverse p-5">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"><strong>Hackerman</strong></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="/"><strong>SQL injection</strong></a></li>
+          <li class="active"><a href="/csrf_yes_no"><strong><u>CSRF</u></strong></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <main role="main" class="inner cover">
+              <h1 class="cover-heading">CSRF</h1>
+              <p class="lead">Here you can change some administrator password.</p>
+              <p class="lead">
+                  CSRF is:
+                  {% if csrf_enabled %}
+                  <b>ENABLED</b>
+                  {% else %}
+                  <b>DISABLED</b>
+                  {% endif %}
+              </p>
+              {% if csrf_enabled %}
+              <form action="/change_password" method="get">
+                {% else %}
+                <form action="/change_password" method="post">
+                {% csrf_token %}
+                {% endif %}
+              <p class="lead form-group d-flex flex-column align-items-center">
+                  <label class="form-label">This is your very strong password:</label>
+                  <input class="form-control pull-right" type="password" name="password" value="{{password}}" style="max-width: 500px;" data-toggle="tooltip" title="{{password}}">
+              </p>
+              <p class="lead">
+              <button type="submit" class="btn btn-lg btn-secondary">Save</button>
+              </p>
+          </form>
+
+          <p class="lead text-muted">
+            <i>(Zamisli da se ovo dolje nalazi na nekoj drugoj stranici)</i>
+          </p>
+          <p class="lead">Jaooooj što je slatka slika ove mace daj <a href="/change_password?password=hakiralasamtilozinkuHA&redirect_url=https://pbs.twimg.com/media/FH5nHQ1XsAE9kHT.jpg" class="text-warning"><b style="font-size: xx-large;">klikni ovdje</b></a> pogle je</p>
+
+        </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+        </div>
+      </footer>
+
+</body>
+</html>
+
+<script src="{% static '/js/jquery-3.2.1.slim.min.js' %}"></script>
+<script src="{% static '/js/popper.min.js' %}"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>
+
+<script>
+  // initialize tooltip
+  $('[data-toggle="tooltip"]').tooltip()
+</script>
