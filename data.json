@@ -3,152 +3,180 @@
       "model": "lab2_App.users",
       "pk": 1,
       "fields": {
-        "user_name": "admin",
-        "first_name": "Adminko",
-        "last_name": "Adminić",
-        "email": "admo@admin.com",
-        "password": "mojnovisnazniadminpassword",
-        "role": "admin"
+        "name": "asdfgvbn",
+        "role": "admin",
+        "email": "asdfgvbn@kjh.com",
+        "password": "VrloSnaznaAdminLozinka",
+        "first_name": "Admin",
+        "last_name": "Adminković"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 2,
       "fields": {
-        "user_name": "snjeska",
-        "first_name": "Snješka",
-        "last_name": "Mrzlić",
-        "email": "mrma@zima.hr",
-        "password": "ledledeni123",
-        "role": "user"
+        "name": "marijeta123",
+        "role": "",
+        "email": "marijeta123@krompir.hr",
+        "password": "marijetavoliugljikohidrate",
+        "first_name": "Marijeta",
+        "last_name": "Krompirko"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 3,
       "fields": {
-        "user_name": "seka",
-        "first_name": "Seka",
-        "last_name": "Aleksić",
-        "email": "seka@aleksic.rs",
-        "password": "pevaljka007",
-        "role": "user"
+        "name": "snjeska",
+        "role": "user",
+        "email": "mrma@zima.hr",
+        "password": "ledledeni123",
+        "first_name": "Snješka",
+        "last_name": "Mrzlić"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 4,
       "fields": {
-        "user_name": "gabica",
-        "first_name": "Gabi",
-        "last_name": "Novak",
-        "email": "grabijela@gmail.com",
-        "password": "PamtimSamoSretneDane",
-        "role": "user"
+        "name": "seka",
+        "role": "user",
+        "email": "seka@aleksic.rs",
+        "password": "pevaljka007",
+        "first_name": "Seka",
+        "last_name": "Aleksić"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 5,
       "fields": {
-        "user_name": "koka",
-        "first_name": "Emilija",
-        "last_name": "Kokić",
-        "email": "emica.koks@email.com",
-        "password": "RockMeBaby",
-        "role": "user"
+        "name": "gabica",
+        "role": "user",
+        "email": "grabijela@gmail.com",
+        "password": "PamtimSamoSretneDane",
+        "first_name": "Gabi",
+        "last_name": "Novak"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 6,
       "fields": {
-        "user_name": "cetina",
-        "first_name": "Meri",
-        "last_name": "Cetinić",
-        "email": "moremore@mail.hr",
-        "password": "PotraziMeUPredgradu",
-        "role": "user"
+        "name": "koka",
+        "role": "user",
+        "email": "emica.koks@email.com",
+        "password": "RockMeBaby",
+        "first_name": "Emilija",
+        "last_name": "Kokić"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 7,
       "fields": {
-        "user_name": "zicaros",
-        "first_name": "Molim",
-        "last_name": "Bodove",
-        "email": "molim@bodove.hr",
-        "password": "dajbodpls123",
-        "role": "user"
+        "name": "cetina",
+        "role": "user",
+        "email": "moremore@mail.hr",
+        "password": "PotraziMeUPredgradu",
+        "first_name": "Meri",
+        "last_name": "Cetinić"
       }
     },
     {
       "model": "lab2_App.users",
       "pk": 8,
       "fields": {
-        "user_name": "dedo",
-        "first_name": "Arsen",
-        "last_name": "Dedić",
-        "email": "jasamdedo@hotmail.com",
-        "password": "OnoSveStoZnasOMeni",
-        "role": "user"
+        "name": "zicaros",
+        "role": "user",
+        "email": "molim@bodove.hr",
+        "password": "dajbodpls123",
+        "first_name": "Molim",
+        "last_name": "Bodove"
       }
     },
     {
-      "model": "lab2_App.teams",
-      "pk": 1,
+      "model": "lab2_App.users",
+      "pk": 9,
       "fields": {
-        "name": "Man City",
-        "nickname": "MCI"
+        "name": "dedo",
+        "role": "user",
+        "email": "jasamdedo@hotmail.com",
+        "password": "OnoSveStoZnasOMeni",
+        "first_name": "Arsen",
+        "last_name": "Dedić"
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 2,
       "fields": {
-        "name": "Arsenal",
-        "nickname": "ARS"
+        "name": "Man City",
+        "nickname": "MCI",
+        "played": 1,
+        "won": 0,
+        "lost": 1,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 3,
       "fields": {
-        "name": "Tottenham",
-        "nickname": "TOT"
+        "name": "Arsenal",
+        "nickname": "ARS",
+        "played": 2,
+        "won": 2,
+        "lost": 0,
+        "points": 4
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 4,
       "fields": {
-        "name": "Newcastle",
-        "nickname": "NEW"
+        "name": "Tottenham",
+        "nickname": "TOT",
+        "played": 1,
+        "won": 0,
+        "lost": 1,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 5,
       "fields": {
-        "name": "Chelsea",
-        "nickname": "CHE"
+        "name": "Newcastle",
+        "nickname": "NEW",
+        "played": 1,
+        "won": 0,
+        "lost": 0,
+        "points": 1
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 6,
       "fields": {
-        "name": "Man Utd",
-        "nickname": "MUN"
+        "name": "Chelsea",
+        "nickname": "CHE",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 7,
       "fields": {
-        "name": "Fulham",
-        "nickname": "FUL"
+        "name": "Man Utd",
+        "nickname": "MUN",
+        "played": 2,
+        "won": 0,
+        "lost": 1,
+        "points": 1
       }
     },
     {
@@ -156,103 +184,284 @@
       "pk": 8,
       "fields": {
         "name": "Brighton",
-        "nickname": "BRH"
+        "nickname": "BRH",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 9,
       "fields": {
-        "name": "Liverpool",
-        "nickname": "LIV"
+        "name": "Fulham",
+        "nickname": "FUL",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 10,
       "fields": {
-        "name": "Crystal Palace",
-        "nickname": "CRY"
+        "name": "Liverpool",
+        "nickname": "LIV",
+        "played": 3,
+        "won": 3,
+        "lost": 0,
+        "points": 6
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 11,
       "fields": {
-        "name": "Brentford",
-        "nickname": "BRE"
+        "name": "Crystal Palace",
+        "nickname": "CRY",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 12,
       "fields": {
-        "name": "West Ham",
-        "nickname": "WHU"
+        "name": "Brentford",
+        "nickname": "BRE",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 13,
       "fields": {
-        "name": "Everton",
-        "nickname": "EVE"
+        "name": "West Ham",
+        "nickname": "WHU",
+        "played": 1,
+        "won": 0,
+        "lost": 1,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 14,
       "fields": {
-        "name": "Bournemouth",
-        "nickname": "BOU"
+        "name": "Everton",
+        "nickname": "EVE",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 15,
       "fields": {
-        "name": "Aston Villa",
-        "nickname": "AVL"
+        "name": "Bournemouth",
+        "nickname": "BOU",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 16,
       "fields": {
-        "name": "Southampton",
-        "nickname": "SOU"
+        "name": "Aston Villa",
+        "nickname": "AVL",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 17,
       "fields": {
-        "name": "Leicester",
-        "nickname": "LEI"
+        "name": "Southampton",
+        "nickname": "SOU",
+        "played": 1,
+        "won": 0,
+        "lost": 1,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 18,
       "fields": {
-        "name": "Wolverhampton",
-        "nickname": "WLV"
+        "name": "Leicester",
+        "nickname": "LEI",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 19,
       "fields": {
-        "name": "Leeds United",
-        "nickname": "LEE"
+        "name": "Wolverhampton",
+        "nickname": "WLV",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
       }
     },
     {
       "model": "lab2_App.teams",
       "pk": 20,
       "fields": {
+        "name": "Leeds United",
+        "nickname": "LEE",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
+      }
+    },
+    {
+      "model": "lab2_App.teams",
+      "pk": 21,
+      "fields": {
         "name": "Nottingham Forest",
-        "nickname": "NTF"
+        "nickname": "NTF",
+        "played": 0,
+        "won": 0,
+        "lost": 0,
+        "points": 0
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 16,
+      "fields": {
+        "team1": 2,
+        "team2": 3,
+        "goals1": 1,
+        "goals2": 2,
+        "date": "2022-10-03",
+        "time": "06:47:00"
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 17,
+      "fields": {
+        "team1": 4,
+        "team2": 3,
+        "goals1": 1,
+        "goals2": 2,
+        "date": "2022-09-21",
+        "time": "15:40:00"
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 19,
+      "fields": {
+        "team1": 5,
+        "team2": 7,
+        "goals1": 1,
+        "goals2": 1,
+        "date": "2022-10-05",
+        "time": "04:58:00"
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 20,
+      "fields": {
+        "team1": 10,
+        "team2": 13,
+        "goals1": 3,
+        "goals2": 2,
+        "date": "2022-10-02",
+        "time": "08:56:00"
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 21,
+      "fields": {
+        "team1": 10,
+        "team2": 7,
+        "goals1": 5,
+        "goals2": 3,
+        "date": "2022-09-26",
+        "time": "04:02:00"
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 23,
+      "fields": {
+        "team1": 17,
+        "team2": 10,
+        "goals1": 0,
+        "goals2": 1,
+        "date": "2022-09-05",
+        "time": "06:30:00"
+      }
+    },
+    {
+      "model": "lab2_App.matches",
+      "pk": 24,
+      "fields": {
+        "team1": 21,
+        "team2": 10,
+        "goals1": null,
+        "goals2": null,
+        "date": "2023-01-03",
+        "time": "08:54:00"
+      }
+    },
+    {
+      "model": "lab2_App.comments",
+      "pk": 4,
+      "fields": {
+        "user": 1,
+        "match": 19,
+        "comment": "Najbolji strijelac s ove strane Save",
+        "created": "2022-10-30T04:46:07.190Z",
+        "changed": "2022-10-30T16:13:52.797Z"
+      }
+    },
+    {
+      "model": "lab2_App.comments",
+      "pk": 5,
+      "fields": {
+        "user": 1,
+        "match": 19,
+        "comment": "Ovo je bila sjajna utakmica! Jedva cekam iducu!! IDEMO NASIIII",
+        "created": "2022-10-30T04:46:18.633Z",
+        "changed": "2022-10-30T04:46:18.633Z"
+      }
+    },
+    {
+      "model": "lab2_App.comments",
+      "pk": 8,
+      "fields": {
+        "user": 2,
+        "match": 19,
+        "comment": "Vrhunski!",
+        "created": "2022-10-30T05:04:18.222Z",
+        "changed": "2022-10-30T15:10:30.917Z"
       }
     }
   ]

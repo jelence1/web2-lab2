@@ -18,7 +18,7 @@ def index(request):
         
         if enable == "yes":
             sql = request.POST["sql"]
-            sql = '''SELECT name FROM public."lab1_App_teams" WHERE nickname = '{}' '''.format(sql)
+            sql = '''SELECT name FROM public."lab2_App_teams" WHERE nickname = '{}' '''.format(sql)
             with connection.cursor() as cursor:
                 try:
                     cursor.execute(sql)
