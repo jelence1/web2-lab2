@@ -66,9 +66,10 @@ def csrf(request):
 def change_password(request):
     global ENABLE_CSRF
 
+    redirect_url = ""
+
     if ENABLE_CSRF == True: 
         new_password = request.GET["password"]
-        redirect_url = ""
 
         models.Users.objects.filter(id=1).update(password=new_password)
 
