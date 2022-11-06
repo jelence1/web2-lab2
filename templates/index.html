@@ -82,11 +82,13 @@
               <table class="table">
                 <tr>
                   {% if name %}
+                  <th>nickname</th>
                   <th>name</th>
                   {% endif %}
                 </tr>
                  {% for row in name %}
               <tr>
+                <td>{{row.nickname}}</td>
                 <td>{{row.name}}</td>
               </tr>
               {% endfor %}
